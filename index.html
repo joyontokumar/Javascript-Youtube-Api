@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Youtube</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <style>
+        .itemshow {
+            margin-bottom: 30px;
+        }
+        
+        input#search {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        
+        .form-group {
+            margin-bottom: 1rem;
+            position: relative;
+        }
+        
+        .youtube-title a {
+            color: #3a3a3a;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            padding: 15px 0;
+            display: inline-block;
+        }
+        
+        .itemshow img {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8 offset-md-2 mt-5 mb-5 text-center">
+                <div id="show">
+                    <h3 class="mb-3">Search Any Thing In Youtube</h3>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="searchYoutube" />
+                        <input type="button" id="search" class="btn btn-primary" value="Search Youtube" />
+                    </div>
+
+                    <!-- https://www.googleapis.com/youtube/v3/search/?part=snippet&key=AIzaSyCvNjJxN9hLH-JbKfTPod4w1KyZtjZNFCA&q=test&maxResult=20 AIzaSyCvNjJxN9hLH-JbKfTPod4w1KyZtjZNFCA -->
+                </div>
+            </div>
+        </div>
+        <div class="row" id="output"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
